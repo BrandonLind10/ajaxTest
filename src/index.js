@@ -5,7 +5,7 @@ httpRequest.onreadystatechange= requestHandler;
 
 httpRequest.open("GET", "https://blockchain.info/ticker");
 httpRequest.send();
-console.log("sent")
+console.log(httpRequest.responseText)
 let requestHandler= function(){
                 if(httpRequest.readyState === 4){
                     if(httpRequest.status === 200){

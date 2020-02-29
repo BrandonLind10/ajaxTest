@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var httpRequest = new XMLHttpRequest();\nconsole.log(httpRequest);\nhttpRequest.onreadystatechange = requestHandler;\nhttpRequest.open(\"GET\", \"https://blockchain.info/ticker\");\nhttpRequest.send();\nconsole.log(\"sent\");\n\nvar requestHandler = function requestHandler() {\n  if (httpRequest.readyState === 4) {\n    if (httpRequest.status === 200) {\n      console.log(httpRequest.status);\n      console.log(httpRequest.responseText);\n    }\n  }\n};\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var httpRequest = new XMLHttpRequest();\nconsole.log(httpRequest);\nhttpRequest.onreadystatechange = requestHandler;\nhttpRequest.open(\"GET\", \"https://blockchain.info/ticker\");\nhttpRequest.send();\nconsole.log(httpRequest.responseText);\n\nvar requestHandler = function requestHandler() {\n  if (httpRequest.readyState === 4) {\n    if (httpRequest.status === 200) {\n      console.log(httpRequest.status);\n      console.log(httpRequest.responseText);\n    }\n  }\n};\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
